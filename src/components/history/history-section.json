@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_history_history_sections",
+  "info": {
+    "displayName": "History Section",
+    "icon": "atlas"
+  },
+  "options": {},
+  "attributes": {
+    "Slogan": {
+      "type": "string",
+      "required": true
+    },
+    "Year": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "surveis",
+  "info": {
+    "singularName": "survei",
+    "pluralName": "surveis",
+    "displayName": "Survei"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Link": {
+      "type": "string",
+      "required": true
+    },
+    "QRCode": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "Seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}
