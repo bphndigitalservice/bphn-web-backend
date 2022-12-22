@@ -1,0 +1,679 @@
+{
+  "name": "Editor",
+  "code": "strapi-editor",
+  "description": "Editors can manage and publish contents including those of other users.",
+  "permissions": [
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::about.about",
+      "properties": {
+        "fields": [
+          "title",
+          "blocks"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::about.about",
+      "properties": {
+        "fields": [
+          "title",
+          "blocks"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::about.about",
+      "properties": {
+        "fields": [
+          "title",
+          "blocks"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::achievement.achievement",
+      "properties": {
+        "fields": [
+          "Title",
+          "Description",
+          "Items.Name",
+          "Items.Description",
+          "Items.Media",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.shareImage",
+          "Cover"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::achievement.achievement",
+      "properties": {
+        "fields": [
+          "Title",
+          "Description",
+          "Items.Name",
+          "Items.Description",
+          "Items.Media",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.shareImage",
+          "Cover"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::achievement.achievement",
+      "properties": {
+        "fields": [
+          "Title",
+          "Description",
+          "Items.Name",
+          "Items.Description",
+          "Items.Media",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.shareImage",
+          "Cover"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::article.article",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "slug",
+          "cover",
+          "author",
+          "category",
+          "blocks",
+          "views"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::article.article",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "slug",
+          "cover",
+          "author",
+          "category",
+          "blocks",
+          "views"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::article.article",
+      "properties": {
+        "fields": [
+          "title",
+          "description",
+          "slug",
+          "cover",
+          "author",
+          "category",
+          "blocks",
+          "views"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::artifact-type.artifact-type",
+      "properties": {
+        "fields": [
+          "Name",
+          "Description",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.shareImage",
+          "Slug"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::artifact-type.artifact-type",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::artifact-type.artifact-type",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::artifact-type.artifact-type",
+      "properties": {
+        "fields": [
+          "Name",
+          "Description",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.shareImage",
+          "Slug"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::artifact-type.artifact-type",
+      "properties": {
+        "fields": [
+          "Name",
+          "Description",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.shareImage",
+          "Slug"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::artifact.artifact",
+      "properties": {
+        "fields": [
+          "Name",
+          "Description",
+          "Slug",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.shareImage",
+          "File",
+          "articel_category",
+          "Year"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::artifact.artifact",
+      "properties": {
+        "fields": [
+          "Name",
+          "Description",
+          "Slug",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.shareImage",
+          "File",
+          "articel_category",
+          "Year"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::artifact.artifact",
+      "properties": {
+        "fields": [
+          "Name",
+          "Description",
+          "Slug",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.shareImage",
+          "File",
+          "articel_category",
+          "Year"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::author.author",
+      "properties": {
+        "fields": [
+          "name",
+          "avatar",
+          "email",
+          "articles"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::author.author",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::author.author",
+      "properties": {
+        "fields": [
+          "name",
+          "avatar",
+          "email",
+          "articles"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::author.author",
+      "properties": {
+        "fields": [
+          "name",
+          "avatar",
+          "email",
+          "articles"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::category.category",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "articles",
+          "description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::category.category",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "articles",
+          "description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::category.category",
+      "properties": {
+        "fields": [
+          "name",
+          "slug",
+          "articles",
+          "description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::faq-category.faq-category",
+      "properties": {
+        "fields": [
+          "Name",
+          "Enabled",
+          "Slug",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.shareImage"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::faq-category.faq-category",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::faq-category.faq-category",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::faq-category.faq-category",
+      "properties": {
+        "fields": [
+          "Name",
+          "Enabled",
+          "Slug",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.shareImage"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::faq-category.faq-category",
+      "properties": {
+        "fields": [
+          "Name",
+          "Enabled",
+          "Slug",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.shareImage"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::faq.faq",
+      "properties": {
+        "fields": [
+          "Question",
+          "Answer",
+          "faq_group"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::faq.faq",
+      "properties": {
+        "fields": [
+          "Question",
+          "Answer",
+          "faq_group"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::faq.faq",
+      "properties": {
+        "fields": [
+          "Question",
+          "Answer",
+          "faq_group"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::global.global",
+      "properties": {
+        "fields": [
+          "siteName",
+          "favicon",
+          "siteDescription",
+          "defaultSeo.metaTitle",
+          "defaultSeo.metaDescription",
+          "defaultSeo.shareImage"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::global.global",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::global.global",
+      "properties": {
+        "fields": [
+          "siteName",
+          "favicon",
+          "siteDescription",
+          "defaultSeo.metaTitle",
+          "defaultSeo.metaDescription",
+          "defaultSeo.shareImage"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::global.global",
+      "properties": {
+        "fields": [
+          "siteName",
+          "favicon",
+          "siteDescription",
+          "defaultSeo.metaTitle",
+          "defaultSeo.metaDescription",
+          "defaultSeo.shareImage"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::history.history",
+      "properties": {
+        "fields": [
+          "Cover",
+          "Description",
+          "Record.Slogan",
+          "Record.Year",
+          "Record.Description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::history.history",
+      "properties": {
+        "fields": [
+          "Cover",
+          "Description",
+          "Record.Slogan",
+          "Record.Year",
+          "Record.Description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::history.history",
+      "properties": {
+        "fields": [
+          "Cover",
+          "Description",
+          "Record.Slogan",
+          "Record.Year",
+          "Record.Description"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::leader.leader",
+      "properties": {
+        "fields": [
+          "Name",
+          "HeadOfAgency.Fullname",
+          "HeadOfAgency.Role",
+          "HeadOfAgency.Photo",
+          "HeadOfAgency.Brief",
+          "Director.Fullname",
+          "Director.Role",
+          "Director.Photo",
+          "Director.Brief",
+          "Slug",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.shareImage"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::leader.leader",
+      "properties": {
+        "fields": [
+          "Name",
+          "HeadOfAgency.Fullname",
+          "HeadOfAgency.Role",
+          "HeadOfAgency.Photo",
+          "HeadOfAgency.Brief",
+          "Director.Fullname",
+          "Director.Role",
+          "Director.Photo",
+          "Director.Brief",
+          "Slug",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.shareImage"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::leader.leader",
+      "properties": {
+        "fields": [
+          "Name",
+          "HeadOfAgency.Fullname",
+          "HeadOfAgency.Role",
+          "HeadOfAgency.Photo",
+          "HeadOfAgency.Brief",
+          "Director.Fullname",
+          "Director.Role",
+          "Director.Photo",
+          "Director.Brief",
+          "Slug",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.shareImage"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "subject": "api::survei.survei",
+      "properties": {
+        "fields": [
+          "Name",
+          "Link",
+          "QRCode",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.shareImage"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "subject": "api::survei.survei",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "subject": "api::survei.survei",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "subject": "api::survei.survei",
+      "properties": {
+        "fields": [
+          "Name",
+          "Link",
+          "QRCode",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.shareImage"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "subject": "api::survei.survei",
+      "properties": {
+        "fields": [
+          "Name",
+          "Link",
+          "QRCode",
+          "Seo.metaTitle",
+          "Seo.metaDescription",
+          "Seo.shareImage"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.assets.copy-link",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.assets.create",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.assets.download",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.assets.update",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::upload.read",
+      "subject": null,
+      "properties": {},
+      "conditions": []
+    }
+  ]
+}

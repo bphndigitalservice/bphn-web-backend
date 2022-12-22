@@ -1,0 +1,117 @@
+{
+  "key": "plugin_content_manager_configuration_components::team.team",
+  "value": {
+    "uid": "team.team",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "Fullname",
+      "defaultSortBy": "Fullname",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "Fullname": {
+        "edit": {
+          "label": "Fullname",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Fullname",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Role": {
+        "edit": {
+          "label": "Role",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Role",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Photo": {
+        "edit": {
+          "label": "Photo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Photo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "Brief": {
+        "edit": {
+          "label": "Brief",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Brief",
+          "searchable": false,
+          "sortable": false
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "Fullname",
+        "Role",
+        "Photo"
+      ],
+      "edit": [
+        [
+          {
+            "name": "Fullname",
+            "size": 6
+          },
+          {
+            "name": "Role",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "Photo",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "Brief",
+            "size": 12
+          }
+        ]
+      ]
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

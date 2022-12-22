@@ -8,20 +8,24 @@
     "fs-extra": "^10.0.0",
     "lodash.set": "^4.3.2",
     "mime-types": "^2.1.27",
-    "strapi-plugin-local-image-sharp": "^1.2.1"
+    "mysql": "^2.18.1",
+    "strapi-plugin-config-sync": "^1.1.0",
+    "strapi-plugin-local-image-sharp": "^1.2.1",
+    "strapi-plugin-placeholder": "^4.3.6"
   },
   "name": "bphn-web-backend",
   "private": true,
-  "version": "0.1.0",
-  "description": "A Strapi application",
+  "version": "1.0.0",
+  "description": "Headless CMS for BPHN Web Portal",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "cs": "config-sync"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "https://fransfp.dev"
   },
   "strapi": {
     "uuid": "5c5e78e8-323a-49d2-a3ce-08a1d5cfa74a",

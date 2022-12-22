@@ -1,0 +1,127 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::faq.faq",
+  "value": {
+    "uid": "api::faq.faq",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "Question",
+      "defaultSortBy": "Question",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Question": {
+        "edit": {
+          "label": "Question",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Question",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Answer": {
+        "edit": {
+          "label": "Answer",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Answer",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "faq_group": {
+        "edit": {
+          "label": "faq_group",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true,
+          "mainField": "Name"
+        },
+        "list": {
+          "label": "faq_group",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "Question",
+        "faq_group",
+        "createdAt"
+      ],
+      "edit": [
+        [
+          {
+            "name": "Question",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "Answer",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "faq_group",
+            "size": 6
+          }
+        ]
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

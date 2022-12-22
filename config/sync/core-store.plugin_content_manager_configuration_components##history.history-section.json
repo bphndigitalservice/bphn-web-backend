@@ -1,0 +1,96 @@
+{
+  "key": "plugin_content_manager_configuration_components::history.history-section",
+  "value": {
+    "uid": "history.history-section",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "Slogan",
+      "defaultSortBy": "Slogan",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "Slogan": {
+        "edit": {
+          "label": "Slogan",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Slogan",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Year": {
+        "edit": {
+          "label": "Year",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Year",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Description": {
+        "edit": {
+          "label": "Description",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Description",
+          "searchable": false,
+          "sortable": false
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "Slogan",
+        "Year"
+      ],
+      "edit": [
+        [
+          {
+            "name": "Slogan",
+            "size": 6
+          },
+          {
+            "name": "Year",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "Description",
+            "size": 12
+          }
+        ]
+      ]
+    },
+    "isComponent": true
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}

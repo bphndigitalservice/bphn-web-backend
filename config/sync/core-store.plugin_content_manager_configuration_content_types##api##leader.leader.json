@@ -1,0 +1,166 @@
+{
+  "key": "plugin_content_manager_configuration_content_types::api::leader.leader",
+  "value": {
+    "uid": "api::leader.leader",
+    "settings": {
+      "bulkable": true,
+      "filterable": true,
+      "searchable": true,
+      "pageSize": 10,
+      "mainField": "Name",
+      "defaultSortBy": "Name",
+      "defaultSortOrder": "ASC"
+    },
+    "metadatas": {
+      "id": {
+        "edit": {},
+        "list": {
+          "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Name": {
+        "edit": {
+          "label": "Name",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Name",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "HeadOfAgency": {
+        "edit": {
+          "label": "HeadOfAgency",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "HeadOfAgency",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "Director": {
+        "edit": {
+          "label": "Director",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Director",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "Slug": {
+        "edit": {
+          "label": "Slug",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Slug",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "Seo": {
+        "edit": {
+          "label": "Seo",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "Seo",
+          "searchable": false,
+          "sortable": false
+        }
+      },
+      "createdAt": {
+        "edit": {
+          "label": "createdAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "createdAt",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "updatedAt": {
+        "edit": {
+          "label": "updatedAt",
+          "description": "",
+          "placeholder": "",
+          "visible": false,
+          "editable": true
+        },
+        "list": {
+          "label": "updatedAt",
+          "searchable": true,
+          "sortable": true
+        }
+      }
+    },
+    "layouts": {
+      "list": [
+        "id",
+        "Name",
+        "HeadOfAgency",
+        "Director"
+      ],
+      "edit": [
+        [
+          {
+            "name": "Name",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "HeadOfAgency",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "Director",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "Slug",
+            "size": 6
+          }
+        ],
+        [
+          {
+            "name": "Seo",
+            "size": 12
+          }
+        ]
+      ]
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
